@@ -1,0 +1,59 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Suisse Intl', sans-serif;
+  letter-spacing: -0.04em;
+  color: 0F0F0F;
+  background-color: #fcfcfc;
+}
+
+.accent {
+  color: FF7F08;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  h3 {
+    margin-bottom: 25px;
+  }
+}
+
+/* h3 */
+.section-caption {
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* p */
+.section-text {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #777;
+}
