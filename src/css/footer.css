@@ -1,7 +1,3 @@
-footer .container {
-    background-color: aqua;
-}
-
 @media only screen and (max-width: 767px) {
 footer .container {
         position: relative;
@@ -141,7 +137,6 @@ footer .container {
 .address-item {
     font-size: 14px;
     line-height: 1.28571;
-    letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -150,6 +145,12 @@ footer .container {
     font-size: 16px;
     line-height: 1.25;
 }
+}
+@media only screen and (min-width: 768px) {
+.location-span {
+        display: inline-block;
+        width: 97px;
+    }
 }
 
 .footer-bottom {
