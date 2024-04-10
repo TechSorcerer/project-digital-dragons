@@ -23,14 +23,24 @@ ol {
 a {
   color: currentColor;
   text-decoration: none;
+  transition: 500ms ease-in;
 }
 
 button {
   cursor: pointer;
+  transition: 500ms ease-in;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  font-family: inherit;
 }

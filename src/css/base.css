@@ -14,12 +14,12 @@
 body {
   font-family: 'Suisse Intl', sans-serif;
   letter-spacing: -0.04em;
-  color: 0F0F0F;
+  color: #0f0f0f;
   background-color: #fcfcfc;
 }
 
 .accent {
-  color: FF7F08;
+  color: #ff7f08;
 }
 
 .section {
@@ -33,6 +33,14 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
 
 h3 {
@@ -49,6 +57,7 @@ h3 {
 .section-caption {
   font-size: 32px;
   line-height: 1;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* p */
@@ -56,4 +65,5 @@ h3 {
   font-size: 16px;
   line-height: 1.25;
   color: #777;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
