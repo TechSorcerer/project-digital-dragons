@@ -131,6 +131,7 @@
   line-height: 1.25;
   letter-spacing: -0.04rem;
   text-transform: capitalize;
+  transition-property: color;
 }
 
 @media only screen and (min-width: 768px) {
