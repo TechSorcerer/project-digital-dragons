@@ -11,7 +11,13 @@
   opacity: 0;
   transition: 500ms ease-in;
   transition-property: opacity, backdrop-filter;
-  transition-delay: 1500ms;
+  transition-delay: 500ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .mob-tab {
+    display: none;
+  }
 }
 
 .mob-tab.is-open {
@@ -23,9 +29,11 @@
 .mob-tab-box-left {
   width: 50vw;
   height: 100vh;
-  background-image: url(../img/mob-tab-menu/mob-tab-mob@1x.jpg);
+  background-image: url(../img/mob-tab-menu/experiment.jpg);
+  background-position-x: 48%;
   background-repeat: no-repeat;
   background-size: cover;
+  scale: 1.11;
   position: fixed;
   z-index: -1;
   transform: translateX(-100%);
@@ -34,23 +42,36 @@
   transition-delay: 0ms;
 }
 
+/* @media only screen and (min-width: 767.98px) {
+  .mob-tab-box-left {
+    scale: 1;
+    background-position-x: 30%;
+  }
+} */
+
 .mob-tab-box-right {
   display: flex;
   flex-direction: column;
   /* max-width: 196px; */
-  width: 50vw;
+  width: 55vw;
   height: 100vh;
   /* width: 100%;
   height: 100%; */
   margin-left: auto;
-  padding: 32px;
-  padding-top: 371px;
+  padding: 30px;
+
   background-color: #ff7f08;
   transform: translateX(100%);
   transition: 500ms ease-in;
   transition-property: transform;
   transition-delay: 0ms;
 }
+
+/* @media only screen and (min-width: 767.98px) {
+  .mob-tab-box-right {
+    width: 48vw;
+  }
+} */
 
 .mob-tab.is-open .mob-tab-box-left {
   transform: translateX(0);
@@ -64,6 +85,12 @@
   transition-delay: 500ms;
 }
 
+/* @media only screen and (min-width: 767.98px) {
+  .mob-tab.is-open .mob-tab-box-right {
+    transform: translateX(14%);
+  }
+} */
+
 .mob-tab-btn {
   position: absolute;
   padding: 0;
@@ -76,9 +103,15 @@
   stroke: #fff;
 }
 
+@media only screen and (min-width: 767.98px) {
+  .mob-tab-icon {
+    width: 19px;
+    height: 19px;
+  }
+}
+
 .mob-tab-menu {
-  /* margin-bottom: auto;
-  padding-bottom: 32px; */
+  margin: auto;
 }
 
 .mob-tab-list {
@@ -99,6 +132,12 @@
 
 .how {
   color: #fcfcfc;
+}
+
+@media only screen and (min-width: 767.98px) {
+  .mob-tab-link {
+    font-size: 32px;
+  }
 }
 
 /* #region hover link */
@@ -123,4 +162,16 @@
   padding: 8px;
   width: 132px;
   height: 30px;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 767.98px) {
+  .mob-tab-tel {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    width: 187px;
+    height: 40px;
+  }
 }
