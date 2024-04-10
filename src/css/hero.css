@@ -5,7 +5,6 @@
   font-style: normal;
   line-height: 1;
   letter-spacing: -0.04em;
-  margin-top: 40px;
 }
 .hero-list {
   display: flex;
@@ -26,13 +25,12 @@
 @media screen and (min-width: 768px) {
   .hero-title {
     width: 703px;
-    padding-left: 24px;
+    margin: 0 auto;
     font-size: 64px;
-
-    line-height: 1;
   }
   .hero-list {
     width: 333px;
+    margin: 32px auto 50px;
   }
   .hero-item {
     font-size: 16px;
@@ -41,5 +39,8 @@
 @media screen and (min-width: 1280px) {
   .hero-title {
     width: 1158px;
+  }
+  .hero-title-bottom {
+    display: block;
   }
 }
