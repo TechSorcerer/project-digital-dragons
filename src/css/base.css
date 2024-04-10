@@ -35,8 +35,8 @@ h6 {
 }
 
 h2 {
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.28571;
   letter-spacing: -0.04em;
   color: #ff7f08;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
@@ -45,6 +45,13 @@ h2 {
 @media only screen and (max-width: 767px) {
   h2 {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
