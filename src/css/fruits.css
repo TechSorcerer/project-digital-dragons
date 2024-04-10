@@ -20,12 +20,6 @@
 .fruits-title {
 }
 
-@media only screen and (max-width: 767px) {
-  .fruits-title {
-    font-size: 14px;
-    line-height: 1.28;
-  }
-}
 .fruits-caption {
 }
 .fruits-wrapper-text {
@@ -72,12 +66,24 @@
   margin: 0 auto;
 }
 .fruits-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .fruits-message {
 }
 .fruits-list-title {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #0f0f0f;
 }
 .fruits-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #777;
 }
 .btn-fruits {
 }
