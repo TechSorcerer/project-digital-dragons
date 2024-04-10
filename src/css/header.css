@@ -2,11 +2,30 @@
   margin-bottom: 80px;
 }
 
-.container {
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 100px;
+  }
+}
+
+.header .container {
+  position: relative;
   display: flex;
   align-items: center;
-  padding-top: 26px;
-  justify-content: space-between;
+  padding-top: 24px;
+  justify-content: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .container {
+    padding-top: 36px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .container {
+    padding-top: 28px;
+  }
 }
 
 .header .logo {
@@ -16,7 +35,34 @@
 .header .navigation {
   display: none;
   margin-right: 130px;
+  align-items: baseline;
 }
+
+/*  */
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  width: 620px;
+}
+
+.nav-item {
+  width: calc((100% - 60px) / 4);
+}
+.nav-link {
+  width: 100%;
+  height: 34px;
+  display: block;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-align: center;
+  border: 1px solid rgba(15, 15, 15, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/*  */
 
 @media only screen and (min-width: 1280px) {
   .header .navigation {
@@ -24,12 +70,12 @@
   }
 }
 
-.tel-contact {
+.header .tel-contact {
   display: none;
 }
 
 @media only screen and (min-width: 1280px) {
-  .tel-contact {
+  .header .tel-contact {
     display: block;
     font-size: 14px;
     line-height: 1.28571;
@@ -43,20 +89,30 @@
   }
 }
 
-.tel-contact:hover {
+.header .tel-contact:hover {
   background-color: #e76f00;
 }
 
-.menu-btn {
+.header .menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 19px;
   border: none;
   background-color: transparent;
 }
-.menu-btn-icon {
+.header .menu-btn-icon {
   stroke: #0f0f0f;
 }
 
+@media only screen and (min-width: 768px) {
+  .header .menu-btn {
+    top: 26px;
+    right: 32px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
-  .menu-btn {
+  .header .menu-btn {
     display: none;
   }
 }
