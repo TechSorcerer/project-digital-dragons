@@ -40,7 +40,7 @@ h2 {
   line-height: 1.25;
   letter-spacing: -0.04em;
   color: #ff7f08;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
 .section-caption {
   font-size: 32px;
   line-height: 1;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 /* p */
@@ -65,5 +65,5 @@ h3 {
   font-size: 16px;
   line-height: 1.25;
   color: #777;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
 }
