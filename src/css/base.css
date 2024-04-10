@@ -55,15 +55,30 @@ h3 {
 
 /* h3 */
 .section-caption {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1;
+  letter-spacing: -0.04em;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-caption {
+    font-size: 32px;
+  }
 }
 
 /* p */
 .section-text {
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
   color: #777;
   text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
