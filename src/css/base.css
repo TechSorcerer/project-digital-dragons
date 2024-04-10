@@ -26,6 +26,12 @@ section {
   margin-bottom: 80px;
 }
 
+@media only screen and (min-width: 1280px) {
+  section {
+    margin-bottom: 124px;
+  }
+}
+
 h1,
 h2,
 h3,
