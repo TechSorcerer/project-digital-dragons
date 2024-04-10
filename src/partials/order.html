@@ -1,0 +1,82 @@
+<section class="section order">
+  <div class="container">
+    <div class="text-container-before-form">
+      <h2 class="section-title">Order</h2>
+      <div class="container-caption-text">
+        <h3 class="section-caption">
+          Fresh <span class="accent">Harvest Box</span> has got you
+          <span class="block">covered</span>
+        </h3>
+        <p class="section-text">
+          Our boxes are packed with delicious, nutritious fruits and vegetables,
+          perfect&nbsp;for anyone looking to eat healthier or support local
+          farmers. Order your box today and start enjoying the best that nature
+          has to offer!
+        </p>
+      </div>
+    </div>
+    <div class="container-form-img">
+      <div class="container-form">
+        <form class="form">
+          <input
+            class="field"
+            type="text"
+            id="user-name"
+            name="user_name"
+            placeholder="Enter full name"
+            autocomplete="name"
+            pattern="[a-zA-Z]+\s[a-zA-Z]+"
+            required
+          />
+
+          <input
+            class="field"
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Enter email"
+            autocomplete="email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <textarea
+            class="field field-comment"
+            name="user_comment"
+            id="comment"
+            placeholder="Enter comments"
+          ></textarea>
+          <button class="order-btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <picture>
+        <source
+          srcset="
+            ../img/order/desktop/garden-desk@1x.jpg 1x,
+            ../img/order/desktop/garden-desk@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ../img/order/tablet/garden-tablet@1x.jpg 1x,
+            ../img/order/tablet/garden-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/order/mobile/garden-mob@1x.jpg 1x,
+            ../img/order/mobile/garden-mob@2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="order-img"
+          src="../img/order/fallback/garden@1x.jpg"
+          alt="Woman holding a box of oranges in the garden"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
