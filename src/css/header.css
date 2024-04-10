@@ -65,7 +65,12 @@
     border-radius: 8px;
     padding: 8px 16px;
     background-color: #ff7f08;
+    transition-property: background-color;
   }
+}
+
+.tel-contact:hover {
+  background-color: #e76f00;
 }
 
 .menu-btn {
