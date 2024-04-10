@@ -28,24 +28,12 @@
 }
 .fruits-caption {
 }
-
-@media only screen and (max-width: 767px) {
-  .fruits-caption {
-    font-size: 24px;
-  }
-}
 .fruits-wrapper-text {
 }
 .section-caption {
 }
 
 .fruits-text {
-}
-@media only screen and (max-width: 767px) {
-  .fruits-text {
-    font-size: 14px;
-    line-height: 1.28;
-  }
 }
 .section-text {
 }
@@ -55,10 +43,33 @@
 /* #region Fruits-list */
 
 .fruits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .fruits-item {
+  padding: 40px;
+
+  border: 1px solid rgba(15, 15, 15, 0.15);
+  border-radius: 8px;
 }
+
+@media only screen and (max-width: 767px) {
+  .fruits-item:nth-child(n + 7) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .fruits-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
 .fruits-img {
+  margin: 0 auto;
 }
 .fruits-info {
 }
