@@ -1,5 +1,6 @@
 .container {
   outline: 1px solid red;
+  /* 375px 768px 1280px */
 }
 
 .fruits {
@@ -10,16 +11,41 @@
 /* #region Fruits Wrapper */
 
 .fruits-wrapper {
+  margin-bottom: 40px;
 }
+
 .fruits-wrapper-title {
+  margin-bottom: 20px;
 }
 .fruits-title {
+}
+
+@media only screen and (max-width: 767px) {
+  .fruits-title {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.fruits-caption {
+}
+
+@media only screen and (max-width: 767px) {
+  .fruits-caption {
+    font-size: 24px;
+  }
 }
 .fruits-wrapper-text {
 }
 .section-caption {
 }
+
 .fruits-text {
+}
+@media only screen and (max-width: 767px) {
+  .fruits-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 .section-text {
 }
