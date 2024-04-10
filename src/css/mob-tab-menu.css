@@ -1,0 +1,28 @@
+.mob-tab {
+  position: fixed;
+  inset: 0;
+}
+.mob-tab-box-left {
+}
+
+.mob-tab-box-right {
+  max-width: 141px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* margin-left: auto; */
+  background-color: #ff7f08;
+}
+.mob-tab-btn {
+}
+.mob-tab-icon {
+}
+.mob-tab-list {
+}
+.mob-tab-item {
+}
+.mob-tab-link {
+}
+.mob-tab-tel {
+}
