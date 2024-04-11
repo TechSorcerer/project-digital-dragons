@@ -1,24 +1,16 @@
-.header {
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 768px) {
-  .header {
-    margin-bottom: 100px;
-  }
-}
-
 .header .container {
   position: relative;
   display: flex;
   align-items: center;
   padding-top: 24px;
+  padding-bottom: 40px;
   justify-content: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
   .header .container {
     padding-top: 36px;
+    padding-bottom: 50px;
   }
 }
 
@@ -62,7 +54,7 @@
     transition-property: background-color;
   }
 }
-
+.header .tel-contact:active,
 .header .tel-contact:hover {
   background-color: #e76f00;
 }
