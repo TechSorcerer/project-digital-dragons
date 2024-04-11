@@ -1,0 +1,84 @@
+.header .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  justify-content: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .container {
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .container {
+    padding-top: 28px;
+  }
+}
+
+.header .logo {
+  margin-right: 215px;
+}
+
+.header .navigation {
+  display: none;
+  margin-right: 130px;
+  align-items: baseline;
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .navigation {
+    display: flex;
+  }
+}
+
+.header .tel-contact {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .tel-contact {
+    display: block;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fcfcfc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #ff7f08;
+    transition-property: background-color;
+  }
+}
+.header .tel-contact:active,
+.header .tel-contact:hover {
+  background-color: #e76f00;
+}
+
+.header .menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  border: none;
+  background-color: transparent;
+}
+.header .menu-btn-icon {
+  stroke: #0f0f0f;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .menu-btn {
+    top: 26px;
+    right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header .menu-btn {
+    display: none;
+  }
+}

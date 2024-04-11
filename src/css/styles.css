@@ -11,6 +11,7 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./navigation.css');
+@import url('./logo.css');
 
 /* body */
 @import url('./header.css');
