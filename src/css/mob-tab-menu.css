@@ -28,7 +28,7 @@
 }
 
 .mob-tab-box-left {
-  min-width: 80%;
+  min-width: 52%;
   height: 100vh;
   background-image: url(../img/mob-tab-menu/mtm@1x.jpg);
   background-position-x: 48%;
@@ -70,7 +70,7 @@
 
 @media only screen and (min-width: 767.98px) {
   .mob-tab-box-right {
-    width: 48%;
+    min-width: 48%;
   }
 }
 
