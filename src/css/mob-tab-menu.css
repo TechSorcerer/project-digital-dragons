@@ -26,7 +26,7 @@
 .mob-tab-box-left {
   min-width: 52%;
   height: 100vh;
-  background-image: url(../img/mob-tab-menu/mtm@1x.jpg);
+  background-image: url(./img/mob-tab-menu/mtm@1x.jpg);
   background-position-x: 48%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,7 @@
 
 @media (min-resolution: 192dpi) {
   .mob-tab-box-left {
-    background-image: url(../img/mob-tab-menu/mtm@2x.jpg);
+    background-image: url(./img/mob-tab-menu/mtm@2x.jpg);
   }
 }
 
