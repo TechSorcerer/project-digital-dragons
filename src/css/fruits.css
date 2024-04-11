@@ -1,0 +1,318 @@
+.container {
+  /* outline: 1px solid red; */
+  /* 375px 768px 1280px */
+}
+
+.fruits {
+}
+.container {
+}
+
+/* #region Fruits Wrapper */
+
+.fruits-wrapper {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 170px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-wrapper {
+    gap: 551px;
+  }
+}
+
+.fruits-wrapper-title {
+}
+
+@media only screen and (max-width: 374px) {
+  .fruits-wrapper-title {
+    margin-bottom: 20px;
+  }
+}
+.fruits-title {
+}
+
+.fruits-caption {
+}
+
+.fruits-wrapper-text {
+}
+.section-caption {
+}
+
+.fruits-text {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .fruits-text-secpart {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-text {
+    max-width: 496px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-text {
+    max-width: 509px;
+  }
+}
+.section-text {
+}
+
+/* #endregion Fruits Wrapper */
+
+/* #region Fruits-list */
+
+.fruits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-list {
+    gap: 32px 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-list {
+    gap: 32px 23px;
+  }
+}
+.fruits-item {
+  padding: 40px;
+  flex-grow: 1;
+
+  position: relative;
+  z-index: 2;
+
+  border: 1px solid rgba(15, 15, 15, 0.15);
+  border-radius: 8px;
+
+  transition: background-color 500ms ease-in;
+}
+
+@media only screen and (max-width: 767px) {
+  .fruits-item:nth-child(n + 7) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .fruits-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item {
+    width: calc((100% - 24px * 1) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item {
+    width: calc((100% - 23px * 2) / 3);
+  }
+}
+
+.fruits-item:hover,
+.fruits-item:active,
+.fruits-item:focus {
+  background-color: #ff7f08;
+}
+
+.fruits-item:hover .fruits-list-title,
+.fruits-item:hover .fruits-list-text {
+  color: #fcfcfc;
+}
+
+.fruits-item:hover .btn-fruits {
+  background-color: #fcfcfc;
+  color: #ff7f08;
+}
+
+.fruits-photos {
+  position: relative;
+  transition: 500ms ease-in;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 18px);
+    z-index: 2;
+    width: 142px;
+    height: 28px;
+    background-color: #0f0f0f;
+    /* opacity: 0.1; */
+    opacity: 0.2;
+    filter: blur(13px);
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fruits-photos {
+    &::before {
+      width: 120px;
+      height: 23px;
+    }
+  }
+}
+
+.fruits-picture {
+}
+
+.fruits-img {
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+
+  width: 182px;
+  height: 155px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-img {
+    width: 216px;
+    height: 184px;
+  }
+}
+
+.fruits-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fruits-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  /* margin-top: 40px; */
+  margin-top: 54px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-info {
+    margin-top: 74px;
+  }
+}
+
+.fruits-message {
+  width: 100%;
+  height: 44px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-message {
+    height: 50px;
+  }
+}
+.fruits-list-title {
+  margin-bottom: 6px;
+
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #0f0f0f;
+  transition: color 500ms ease-in;
+}
+.fruits-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #777;
+  transition: color 500ms ease-in;
+}
+
+.btn-fruits {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 8px;
+  min-width: 93px;
+  min-height: 34px;
+
+  font-family: 'Suisse Intl', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fcfcfc;
+
+  border: transparent;
+  border-radius: 8px;
+  background-color: #ff7f08;
+
+  transition: background-color 500ms ease-in, color 500ms ease-in;
+}
+
+.btn-fruits:hover,
+.btn-fruits:active,
+.btn-fruits:focus {
+  background-color: #fcfcfc;
+  color: #ff7f08;
+  outline: 1px solid #ff7f08;
+}
+
+/* #endregion Fruits-list */
+
+/* #region Button fruits */
+.btn-mob-fruits {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 14px 32px;
+  min-width: 132px;
+  height: 46px;
+
+  border: 1px solid #ff7f08;
+  border-radius: 16px;
+
+  font-family: 'Suisse Intl', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+  background-color: #fcfcfc;
+
+  transition: color 500ms ease-in, background-color 500ms ease-in;
+}
+
+.btn-mob-fruits:hover,
+.btn-mob-fruits:active {
+  background-color: #ff7f08;
+  color: #fcfcfc;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-mob-fruits {
+    display: none;
+  }
+}
+
+/* #endregion Button fruits */
