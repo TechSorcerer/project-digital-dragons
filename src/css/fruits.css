@@ -1,5 +1,5 @@
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   /* 375px 768px 1280px */
 }
 
@@ -279,3 +279,40 @@
 }
 
 /* #endregion Fruits-list */
+
+/* #region Button fruits */
+.btn-mob-fruits {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 14px 32px;
+  min-width: 132px;
+  height: 46px;
+
+  border: 1px solid #ff7f08;
+  border-radius: 16px;
+
+  font-family: 'Suisse Intl', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+  background-color: #fcfcfc;
+
+  transition: color 500ms ease-in, background-color 500ms ease-in;
+}
+
+.btn-mob-fruits:hover,
+.btn-mob-fruits:active {
+  background-color: #ff7f08;
+  color: #fcfcfc;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-mob-fruits {
+    display: none;
+  }
+}
+
+/* #endregion Button fruits */
