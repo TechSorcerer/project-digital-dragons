@@ -23,12 +23,12 @@ body {
 }
 
 section {
-  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 @media only screen and (min-width: 1280px) {
   section {
-    margin-bottom: 124px;
+    padding: 62px 0;
   }
 }
 
