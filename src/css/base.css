@@ -22,8 +22,14 @@ body {
   color: #ff7f08;
 }
 
-.section {
-  margin-bottom: 80px;
+section {
+  padding: 40px 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  section {
+    padding: 62px 0;
+  }
 }
 
 h1,
