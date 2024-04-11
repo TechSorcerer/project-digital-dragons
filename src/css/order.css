@@ -87,20 +87,44 @@
   }
 }
 
-.field {
+.group {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.group-comment {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  color: #fcfcfc;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.04rem;
+  left: 15px;
+  top: 15px;
+  transition: 500ms ease-in;
+}
+
+.field,
+.field-comment {
   border-radius: 8px;
   border: 1px solid rgba(252, 252, 252, 0.35);
   padding: 12px 14px;
   background-color: transparent;
   width: 100%;
   height: 48px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   color: #fcfcfc;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.04rem;
   outline: none;
+  transition: 500ms ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -111,35 +135,54 @@
   }
 }
 
-.field::placeholder {
+/* .field::placeholder {
   color: #fcfcfc;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  line-height: 1.29; /* 128.571% */
+  line-height: 1.29; 
   letter-spacing: -0.04rem;
-}
+} */
 
 .field-comment {
   resize: none;
   height: 97px;
-  margin-bottom: 25px;
 }
 
 @media only screen and (min-width: 768px) {
   .field-comment {
     resize: none;
     height: 101px;
-    margin-bottom: 25px;
   }
 }
 
-.field:focus-within {
+.field:focus-within,
+.field-comment:focus-within {
   border-color: #fcfcfc;
+  box-shadow: 2px 2px 2px #ff7f08, 2px 2px #fcfcfc;
+  top: -2px;
+  left: -2px;
+}
+
+.field:focus-within ~ label,
+.field:valid ~ label,
+.field-comment:focus-within ~ label,
+.field-comment:valid ~ label,
+.field:invalid:not(:placeholder-shown) ~ label {
+  top: -9px;
+  font-size: 12px;
+  color: #fcfcfc;
+  background-color: #ff7f08;
+  padding: 0 3px;
 }
 
 .field:invalid:not(:placeholder-shown) {
   border-color: red;
+  box-shadow: 2px 2px 2px #fcfcfc, 4px 4px 2px red;
 }
+
+/* .field:invalid:not(:placeholder-shown) ~ label {
+  opacity: 0;
+} */
 
 .order-btn {
   padding: 13px;
@@ -153,7 +196,7 @@
   line-height: 1.25;
   letter-spacing: -0.04rem;
   text-transform: capitalize;
-  transition-property: color;
+  transition-property: color, box-shadow;
 }
 
 @media only screen and (min-width: 768px) {
