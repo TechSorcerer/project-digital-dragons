@@ -140,6 +140,7 @@
     padding: 72px 80px;
     background-position: -30px -70px;
     background-image: url(../img/steps/steps-tablet.svg);
+    margin-bottom: 0;
   }
   .steps-box-wrapper {
     display: flex;
