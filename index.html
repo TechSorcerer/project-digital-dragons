@@ -7,7 +7,7 @@
     <link rel="icon" href="/project-digital-dragons/assets/favicon-b8cd8bef.svg" type="image/svg+xml" />
     
     <script type="module" crossorigin src="/project-digital-dragons/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-digital-dragons/assets/index-32941880.css">
+    <link rel="stylesheet" href="/project-digital-dragons/assets/index-2aa73e9e.css">
   </head>
   <body>
     <header class="header">
@@ -523,33 +523,43 @@
     <div class="container-form-img">
       <div class="container-form">
         <form class="form">
-          <input
-            class="field"
-            type="text"
-            id="user-name"
-            name="user_name"
-            placeholder="Enter full name"
-            autocomplete="name"
-            pattern="[a-zA-Z]+\s[a-zA-Z]+"
-            required
-          />
+          <div class="group">
+            <input
+              class="field"
+              type="text"
+              id="user-name"
+              name="user_name"
+              placeholder="&nbsp;"
+              autocomplete="name"
+              pattern="[a-zA-Z]+\s[a-zA-Z]+"
+              required
+            />
+            <label for="user-name">Enter full name</label>
+          </div>
 
-          <input
-            class="field"
-            type="email"
-            id="email"
-            name="user_email"
-            placeholder="Enter email"
-            autocomplete="email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <textarea
-            class="field field-comment"
-            name="user_comment"
-            id="comment"
-            placeholder="Enter comments"
-          ></textarea>
+          <div class="group">
+            <input
+              class="field"
+              type="email"
+              id="email"
+              name="user_email"
+              placeholder="&nbsp;"
+              autocomplete="email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <label for="email">Enter email</label>
+          </div>
+          <div class="group-comment">
+            <textarea
+              class="field-comment"
+              name="user_comment"
+              id="comment"
+              placeholder="&nbsp;"
+              required
+            ></textarea>
+            <label for="comment">Enter comments</label>
+          </div>
           <button class="order-btn" type="submit">Submit</button>
         </form>
       </div>
