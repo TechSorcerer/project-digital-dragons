@@ -18,6 +18,19 @@
     </main>
     <load src="./partials/footer.html" />
     <load src="./partials/mob-tab-menu.html" />
+    <script>
+      var button = document.getElementById('myButton');
+      var modal = document.getElementById('myModal');
+      var closeBtn = document.getElementById('closeBtn');
+
+      button.addEventListener('click', function () {
+        modal.className = 'mob-tab is-open';
+      });
+
+      closeBtn.addEventListener('click', function () {
+        modal.className = 'mob-tab';
+      });
+    </script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
