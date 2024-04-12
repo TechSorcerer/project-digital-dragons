@@ -74,8 +74,6 @@
 
 .steps-img {
   border-radius: 16px;
-  width: 335px;
-  height: 330px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,8 +104,7 @@
     flex-direction: column;
   }
   .steps-first-box {
-    padding: 72px 196px 72px 80px;
-    margin-bottom: 16px;
+    padding: 72px 195px 72px 80px;
     background-position: 7px -120px;
     background-image: url(../img/steps/steps-tablet.svg);
   }
@@ -117,7 +114,7 @@
   .steps-item-text {
     font-size: 20px;
     line-height: 1.2;
-    width: 351px;
+    width: 347px;
   }
 
   .steps-one,
@@ -125,14 +122,9 @@
   .steps-three {
     font-size: 24px;
     line-height: 1.17;
-    padding: 15px 18px;
+
     width: 58px;
     height: 58px;
-  }
-
-  .steps-img {
-    width: 704px;
-    height: 382px;
   }
 }
 
