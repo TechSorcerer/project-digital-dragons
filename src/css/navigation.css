@@ -43,6 +43,7 @@
     padding-bottom: 8px;
     transition-property: border-color;
     overflow: hidden;
+    outline: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,7 +54,18 @@
   }
 }
 
-.nav-link:hover,
+@media screen and (hover: hover) {
+.nav-link:hover {
+    border-color: #ff7f08;
+}
+}
+
 .nav-link:focus {
     border-color: #ff7f08;
+}
+
+@media screen and not (hover: hover) {
+.nav-link:active {
+    border-color: #ff7f08;
+}
 }
