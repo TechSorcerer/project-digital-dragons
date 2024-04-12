@@ -94,6 +94,8 @@
   }
 }
 .fruits-item {
+  width: 100%;
+  max-height: 334px;
   padding: 40px;
   flex-grow: 1;
 
@@ -121,6 +123,8 @@
 @media only screen and (min-width: 768px) {
   .fruits-item {
     width: calc((100% - 24px * 1) / 2);
+    padding-top: 50px;
+    max-height: 390px;
   }
 }
 
@@ -208,12 +212,12 @@
   position: relative;
 
   /* margin-top: 40px; */
-  margin-top: 54px;
+  margin-top: 55px;
 }
 
 @media only screen and (min-width: 768px) {
   .fruits-info {
-    margin-top: 74px;
+    margin-top: 66px;
   }
 }
 
