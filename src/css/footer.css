@@ -119,6 +119,7 @@ footer .container {
 
 .socials-icon {
     fill: #FF7F08;
+    transition: fill 500ms ease-in;
 }
 
 @media only screen and (min-width: 768px) {
