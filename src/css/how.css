@@ -75,6 +75,22 @@
 
 .steps-img {
   border-radius: 16px;
+  width: 335px;
+  height: 330px;
+}
+
+@media only screen and (min-width: 768px) {
+  .steps-img {
+    width: 704px;
+    height: 382px;
+  }
+}
+
+@media only screen and (min-width: 2180px) {
+  .steps-img {
+    width: 627px;
+    height: 382px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
