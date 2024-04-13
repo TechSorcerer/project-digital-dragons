@@ -24,6 +24,22 @@
 .hero-img {
   border: 1px;
   overflow: hidden;
+  width: 335px;
+  height: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-img {
+    width: 704px;
+    height: 536px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-img {
+    width: 1216px;
+    height: 536px;
+  }
 }
 
 @media screen and (min-width: 768px) {
