@@ -170,4 +170,20 @@
 
 .reviews-img {
   border-radius: 16px;
+  width: 335px;
+  height: 330px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-img {
+    width: 704px;
+    height: 382px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-img {
+    width: 1216px;
+    height: 382px;
+  }
 }
