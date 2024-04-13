@@ -129,12 +129,28 @@
   line-height: 1.25;
   color: #0f0f0f;
 }
+
+@media only screen and (min-width: 768px) {
+  .reviews-name {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
 .reviews-text {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: -0.02em;
   color: rgba(15, 15, 15, 0.5);
 }
+
+@media only screen and (min-width: 768px) {
+  .reviews-text {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+}
+
 .reviews-stars-list {
   display: flex;
   flex-direction: row;

@@ -207,7 +207,7 @@
 .fruits-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   position: relative;
 
@@ -240,6 +240,13 @@
   color: #0f0f0f;
   transition: color 500ms ease-in;
 }
+
+@media only screen and (min-width: 768px) {
+  .fruits-list-title {
+    font-size: 24px;
+  }
+}
+
 .fruits-list-text {
   font-weight: 400;
   font-size: 14px;
@@ -248,18 +255,17 @@
   color: #777;
   transition: color 500ms ease-in;
 }
+@media only screen and (min-width: 768px) {
+  .fruits-list-text {
+    font-size: 16px;
+  }
+}
 
 .btn-fruits {
-  position: absolute;
-  top: 0;
-  right: 0;
-
   padding: 8px;
   min-width: 93px;
   min-height: 34px;
 
-  font-family: 'Suisse Intl', sans-serif;
-  font-weight: 400;
   font-size: 14px;
 
   line-height: 1.28571;

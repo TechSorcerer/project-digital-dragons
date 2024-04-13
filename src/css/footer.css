@@ -3,25 +3,25 @@ footer .container {
 }
 
 @media only screen and (max-width: 767px) {
-footer .container {
+  footer .container {
     position: relative;
   }
 }
 
 @media only screen and (min-width: 768px) {
-footer .container {
+  footer .container {
     padding-bottom: 28px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-footer .container {
+  footer .container {
     padding-top: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-   .footer-top {
+  .footer-top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
@@ -29,30 +29,30 @@ footer .container {
 }
 
 .footer-title {
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.04em;
-    color: #0f0f0f;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #0f0f0f;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-.footer-title {
+  .footer-title {
     font-size: 64px;
     margin-bottom: 80px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-.footer-title {
+  .footer-title {
     margin-bottom: 0px;
     width: 806px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-.contacts {
+  .contacts {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
@@ -60,7 +60,7 @@ footer .container {
 }
 
 @media only screen and (min-width: 1280px) {
-.contacts  {
+  .contacts {
     flex-direction: column;
     gap: 32px;
     margin-bottom: 0;
@@ -70,41 +70,41 @@ footer .container {
 }
 
 .socials {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-.socials {
+  .socials {
     gap: 20px;
     margin-bottom: 0;
-}
+  }
 }
 
 .socials-link {
-    display: block;
-    display: flex;
-    border: 1px solid #ff7f08;
-    border-radius: 10px;
-    padding: 8px;
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    outline: none;
+  display: block;
+  display: flex;
+  border: 1px solid #ff7f08;
+  border-radius: 10px;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
 }
 
 @media only screen and (min-width: 768px) {
-.socials-link {
+  .socials-link {
     width: 44px;
     height: 44px;
   }
 }
-@media screen  and (hover: hover) {
-.socials-link:hover {
-  border-color: #e76f00;
-}  
+@media screen and (hover: hover) {
+  .socials-link:hover {
+    border-color: #e76f00;
+  }
 }
 
 .socials-link:focus {
@@ -112,24 +112,24 @@ footer .container {
 }
 
 @media screen and not (hover: hover) {
-.socials-link:active {
-  border-color: #e76f00;
-}  
+  .socials-link:active {
+    border-color: #e76f00;
+  }
 }
 
 .socials-icon {
-    fill: #FF7F08;
+  fill: #ff7f08;
 }
 
 @media only screen and (min-width: 768px) {
-.socials-icon {
+  .socials-icon {
     width: 28px;
     height: 28px;
   }
 }
 
 @media screen and (hover: hover) {
-.socials-link:hover .socials-icon {
+  .socials-link:hover .socials-icon {
     fill: #e76f00;
   }
 }
@@ -139,21 +139,21 @@ footer .container {
 }
 
 @media screen and not (hover: hover) {
-.socials-link:active .socials-icon {
+  .socials-link:active .socials-icon {
     fill: #e76f00;
   }
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-bottom: 20px;
-    width: 223px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+  width: 223px;
 }
 
 @media only screen and (min-width: 768px) {
-.address {
+  .address {
     gap: 20px;
     margin-bottom: 0;
     width: 158px;
@@ -161,8 +161,9 @@ footer .container {
 }
 
 .address-item {
-    font-size: 14px;
-    line-height: 1.28571;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
 }
 
 .address-tel {
@@ -170,37 +171,37 @@ footer .container {
 }
 
 @media only screen and (min-width: 768px) {
-.address-item {
+  .address-item {
     text-align: right;
     font-size: 16px;
     line-height: 1.25;
-}
+  }
 }
 @media only screen and (min-width: 768px) {
-.location-span {
-        display: inline-block;
-        width: 97px;
-    }
+  .location-span {
+    display: inline-block;
+    width: 97px;
+  }
 }
 
 .footer-bottom {
-    display: flex;
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) {
-.footer-bottom {
+  .footer-bottom {
     justify-content: space-between;
   }
 }
 
 .footer-logo {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
-.footer-logo {
+  .footer-logo {
     position: absolute;
     left: 20px;
     bottom: 24px;
