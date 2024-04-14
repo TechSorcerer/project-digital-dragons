@@ -2,7 +2,10 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  transition: none;
+}
+
+.logo-text {
+  transition-duration: 0s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -12,6 +15,5 @@
   }
   .logo-text {
     font-size: 18px;
-    transition: none;
   }
 }

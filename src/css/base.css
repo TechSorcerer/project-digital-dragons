@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Suisse Intl';
   letter-spacing: -0.04em;
