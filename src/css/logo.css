@@ -11,5 +11,6 @@
   }
   .logo-text {
     font-size: 18px;
+    transition: none;
   }
 }

@@ -66,6 +66,7 @@
   right: 19px;
   border: none;
   background-color: transparent;
+  transition: none;
 }
 .header .menu-btn-icon {
   stroke: #0f0f0f;
