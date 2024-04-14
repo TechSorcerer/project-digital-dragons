@@ -23,3 +23,20 @@ function toggleModal() {
 button.addEventListener('click', toggleModal);
 closeBtn.addEventListener('click', toggleModal);
 menuLinks.forEach(link => link.addEventListener('click', toggleModal));
+
+const fruitsItem = document.querySelectorAll('.fruits-item');
+const showMoreBtn = document.querySelector('.btn-mob-fruits');
+
+function showMore() {
+  fruitsItem.forEach(item => {
+    const computedStyles = window.getComputedStyle(item);
+    // console.log(computedStyles.getPropertyValue('display'));
+    if (computedStyles.getPropertyValue('display') === 'none') {
+      console.log('here');
+      item.style.display = 'block';
+    }
+  });
+  this.style.display = 'none';
+}
+
+showMoreBtn.addEventListener('click', showMore);
