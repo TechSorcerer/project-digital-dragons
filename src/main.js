@@ -24,6 +24,7 @@ button.addEventListener('click', toggleModal);
 closeBtn.addEventListener('click', toggleModal);
 menuLinks.forEach(link => link.addEventListener('click', toggleModal));
 
+// Show More Button
 const fruitsItem = document.querySelectorAll('.fruits-item');
 const showMoreBtn = document.querySelector('.btn-mob-fruits');
 
